@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="project_3.Sales_Transactions" table="data">
+      <meta attribute="class-description">
+         This class contains the Sales Transactions. 
+      </meta>
+      <id name="Date" type="Date" column="Date">
+         <generator class="native"/>
+      </id>
+      <property name="ProductName" column="ProductName" type="string"/>
+      <property name="Quantity" column="Quantity" type="int"/>
+      <property name="UnitCost" column="UnitCost" type="double"/>
+      <property name="TotalCost" column="TotalCost" type="double"/>
+
+   </class>
+</hibernate-mapping>
